@@ -1,11 +1,16 @@
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
+#include <SFML\Graphics.hpp>
+#include <SFML\Audio.hpp>
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+	int screenwidth = 800, screenheight = 600;
+	sf::RenderWindow window(sf::VideoMode(screenwidth, screenheight), "P.O.N.G.");
+	sf::RectangleShape p1({20.0f,100.0f});
+	sf::RectangleShape p2({ 20.0f,100.0f });
+	p1.setFillColor(sf::Color::Blue);
+	p2.setFillColor(sf::Color::Red);
+
+	p1.setPosition({10.0f, screenheight /2});
 
 	while (window.isOpen())
 	{
@@ -17,7 +22,7 @@ int main()
 		}
 
 		window.clear();
-		window.draw(shape);
+		window.draw(p1);
 		window.display();
 	}
 

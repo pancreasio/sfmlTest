@@ -329,4 +329,4 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
-!/ejemploSFML\lib\SFML-2.5.1\bin
+!/ejemploSFML/lib/SFML-2.5.1/bin
